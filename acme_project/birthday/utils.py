@@ -42,4 +42,4 @@ def get_birthday_for_year(birthday, year):
     except ValueError:
         # В этом случае устанавливаем ДР 1 марта.
         calculated_birthday = date(year=year, month=3, day=1)
-    return calculated_birthday 
+    return calculated_birthday
