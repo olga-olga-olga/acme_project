@@ -23,7 +23,7 @@ class Birthday(models.Model):
         verbose_name_plural = 'Дни рождения'
 
     def __str__(self):
-        return self.last_name, self.first_name
+        return "{0} {1}".format(self.last_name, self.first_name)
+
     def get_absolute_url(self):
         return reverse("birthday:detail", kwargs={"pk": self.pk})
-    
